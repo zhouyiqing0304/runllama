@@ -76,7 +76,7 @@
 <body>
     <div id="output"></div>
     <div id="inputContainer">
-        <input type="text" id="apiUrl" placeholder="API地址">
+        <input type="text" id="apiUrl" placeholder="API Adress">
         <input type="text" id="inputPrompt" placeholder="Type your message...">
         <button id="sendButton">Send</button>
         <button id="newConversationButton">New Conversation</button>
@@ -188,7 +188,7 @@ function parseMarkdown(text) {
             output.appendChild(botMessage);
 	    botMessage.innerHTML=`<b>机器人：</b>`;
             addMessageDivider(); 
-            var url = apiUrl.value || '127.0.0.1:11434'; // 默认值为本地地址
+            var url = apiUrl.value || 'zzw511.bdp.cc:9090'; // 默认值为本地地址
     if (!url.startsWith('http')) {
         url = 'http://' + url;
     }
